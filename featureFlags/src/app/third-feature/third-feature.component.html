@@ -1,0 +1,6 @@
+<div class="container">
+  <div *ngIf="!crazyText">Customize your turtle!</div>
+  <img *ngIf="!crazyText" src="./assets/custom.jpg">
+  <button *ngIf="!crazyText" (click)="customize()">customize!</button>
+</div>
+{{crazyText}}

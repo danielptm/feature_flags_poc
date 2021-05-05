@@ -1,0 +1,13 @@
+<div class="headerContainer">
+  <div>Feature flags POC</div>
+  <div class="routerContainer">
+    <a [routerLink]="'/'">home</a>
+    <a *ngIf="localFlags?.nameFeature" [routerLink]="'first-feature'">Name feature</a>
+    <a *ngIf="localFlags?.updateFeature" [routerLink]="'second-feature'">Update feature</a>
+    <a *ngIf="localFlags?.customizeFeature" [routerLink]="'third-feature'">Customize turtle feature</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+
